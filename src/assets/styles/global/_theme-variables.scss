@@ -1,0 +1,60 @@
+//base colour
+$color-1: #FFFFFF; // white
+$color-2: #3B72FF;
+
+
+// background color for body
+$body-bg-color : $color-1;
+
+// global fonts
+$font-color-base : #000;
+$font-family-base :'Inter', sans-serif;
+
+// heading fonts
+$heading-font-size : 24px;
+$heading-font-weight : 600;
+$heading-line-height : 32px;
+
+
+// heading fonts dark bg color
+$heading-dark-bg-font-color : $color-1;
+
+//title fonts
+$title-font-size : 24px;
+$title-font-weight : 600;
+$title-line-height : normal;
+
+// title fonts dark bg color
+$title-dark-bg-font-color : $color-1;
+
+//description fonts
+$description-font-size : 14px;
+$description-font-weight : 400;
+$description-line-height : 18px;
+
+// description fonts dark bg color
+$description-dark-bg-font-color : $color-1;
+
+
+// button style primary
+$btn-primary-border-color: $color-2;
+$btn-primary-height: 60px;
+$btn-primary-font-size: 14px;
+$btn-primary-font-weight: 500;
+$btn-primary-text-color: $color-2;
+$btn-primary-border-radius: 10px;
+$btn-primary-bg-color: transparent;
+//hover
+// $btn-primary-text-color-hover: $color-1;
+// $btn-primary-bg-color-hover: $color-4;
+// $btn-primary-border-color-hover: $color-4;
+
+
+// button style secondary
+$btn-secondary-border-color: $color-1;
+$btn-secondary-height: 60px;
+$btn-secondary-font-size: 14px;
+$btn-secondary-font-weight: 500;
+$btn-secondary-text-color: $color-1;
+$btn-secondary-border-radius: 10px;
+$btn-secondary-bg-color: transparent;

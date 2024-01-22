@@ -1,0 +1,80 @@
+@import "./theme-variables";
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: $body-bg-color;
+    // background-color: black;
+    color: $font-color-base;
+    font-family: $font-family-base;
+}
+
+.btn-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid $btn-primary-border-color;
+    color: $btn-primary-text-color;
+    border-radius: $btn-primary-border-radius;
+    padding: 8px 10px;
+    background-color: $btn-primary-bg-color;
+    font-family: $font-family-base;
+    font-size: $btn-primary-font-size;
+    font-weight: $btn-primary-font-weight;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid $btn-secondary-border-color;
+    color: $btn-secondary-text-color;
+    border-radius: $btn-secondary-border-radius;
+    padding: 8px 10px;
+    background-color: $btn-secondary-bg-color;
+    font-family: $font-family-base;
+    font-size: $btn-secondary-font-size;
+    font-weight: $btn-secondary-font-weight;
+    margin-top: 10px;
+    cursor: pointer;
+
+
+    svg{
+       
+
+        path{
+            stroke: white;
+        }
+    }
+}
+
+
+.heading{
+    font-size: $heading-font-size;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+}
+
+.title{
+    font-size: $title-font-size;
+    font-weight: $title-font-weight;
+    line-height: $title-line-height;
+}
+
+.description{
+    font-size: $description-font-size;
+    font-weight: $description-font-weight;
+    line-height: $description-line-height;
+}
+
+.bg-dark{
+    .title,.description,.heading{
+        color: $color-1;
+    }
+}
