@@ -9,6 +9,22 @@ body{
     // background-color: black;
     color: $font-color-base;
     font-family: $font-family-base;
+    font-size: $font-size-base;
+}
+
+.content{
+    margin-top: 60px;
+}
+
+a{
+    color: $font-color-base;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover,&:active,&:focus{
+        color: $color-2;
+        font-weight: 500;
+    }
 }
 
 .btn-primary{
