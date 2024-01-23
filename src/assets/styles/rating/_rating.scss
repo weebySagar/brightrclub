@@ -1,0 +1,19 @@
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .separator{
+        color: rgba(0, 0, 0, 0.24);;
+    }
+
+    .rating-stars,.reviews{
+        display: flex;
+        align-items: center;
+
+        span{
+            margin-left: 4px;
+        }
+    }
+
+}
