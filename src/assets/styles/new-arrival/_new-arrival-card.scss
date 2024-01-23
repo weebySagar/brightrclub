@@ -1,0 +1,115 @@
+.new-arrival-card{
+    width: 702px;
+    height: 290px;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    gap: 40px;
+    background-color: #EDF2FF;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    margin: 30px 0;
+
+    .img-wrapper{
+        height: 340px;
+        width: 300px;
+        border-radius: 32px;
+        overflow: hidden;
+        flex-shrink: 0;
+        position: absolute;
+        transform: rotate(-3deg);
+        position: absolute;
+        transition: all 150ms ease-in;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: 360px;
+        right: 47px;
+        transition: all 150ms ease-in-out;
+        top: 48px;
+
+
+        .badge-wrapper{
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    button{
+        opacity: 0;
+    }
+
+    @media (min-width:992px){
+        &:hover{
+            height: 356px;
+            width: 702px;
+            transition: all 200ms ease-in-out;
+            padding-left: 10px;
+    
+    
+            .img-wrapper{
+                transform: rotate(0deg);
+                transition: all 150ms ease-in;
+            }
+    
+            .text-wrapper{
+                gap: 14px;
+                right: 57px;
+                left: 350px;
+                transition: all 150ms ease;
+            }
+    
+            button{
+                opacity: 1;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width:992px){
+    .new-arrival-card{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 10px;
+        background-color: transparent;
+        margin: 0;
+        gap: 20px;
+        transition: none;
+        // pointer-events: none;
+
+        // height: 220px;
+
+        .img-wrapper{
+            height: auto;
+            max-width: 100%;
+            position: static;
+            transform: rotate(0deg);
+        }
+
+        .text-wrapper{
+            // position: static;
+            // left: 50%;
+            top: 10px;
+            // gap: 5px;
+            position: static;
+            padding:20px;
+
+            button{
+                opacity: 1;
+            }
+        }
+    }
+}

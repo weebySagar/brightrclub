@@ -4,26 +4,27 @@ import Image from "../../assets/images/img6.jfif";
 import Button from '../ui/button/Button';
 import Badge from '../ui/badge/Badge';
 import Rating from '@components/ui/rating/Rating';
+import "@styles/new-arrival/_new-arrival-card.scss";
 
-const NewArrivalCard = () => {
+const NewArrivalCard = ({img,title,description,badge,ratings,reviews}) => {
   return (
     <div className="new-arrival-card">
     <div className="img-wrapper">
-        <img src={Image} alt="" className='img-fluid'/>
+        <img src={img} alt="" className='img-fluid'/>
     </div>
     <div className="text-wrapper">
         <div className="badge-wrapper">
-            <Badge variant='primary' text='New Arrival'/>
-            <Badge variant='secondary' text='3-6 years'/>
+            <Badge variant='primary' text={badge[0]}/>
+            <Badge variant='secondary' text={badge[1]}/>
         </div>
         <div className="title-wrapper">
-            <h1 className='title'>How to Catch a Turkey - Adam Wallance</h1>
+            <h1 className='title'>{title}</h1>
         </div>
         <div className="rating-wrapper">
-            <Rating rating='4.3' reviews='1234'/>
+            <Rating rating={ratings} reviews={reviews}/>
         </div>
         <div className="description-wrapper">
-            <span className='description'>All mamma wants on her special day is a little bit of peace, love, and cleanliness... Read more</span>
+            <span className='description'>{description}</span>
         </div>
         <div className="button-wrap">
             <Button text='Add to wishlist' variant='primary'/>

@@ -12,6 +12,10 @@ body {
     font-size: $font-size-base;
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
 .content {
     margin-top: 60px;
 }
@@ -116,5 +120,70 @@ a {
     .description,
     .heading {
         color: $color-1;
+    }
+}
+
+
+.slick-arrow{
+    &.slick-prev{
+        left: 72px;
+        z-index: 1;
+        
+        &::before{
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"> <path d="M17.9375 6.125L10.0625 14L17.9375 21.875" stroke="%233B72FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>') !important;
+        }
+    }
+
+    &.slick-next{
+        right: 72px;
+    }
+
+    &.slick-next,&.slick-prev{
+        background :$color-1;
+        border-radius: 50%;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 64px;
+        width: 64px;
+
+        &::before{
+            content: '';
+            display: block;
+            height: 28px;
+            width: 28px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"> <path d="M10.0625 6.125L17.9375 14L10.0625 21.875" stroke="%233B72FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>');
+            background-repeat: no-repeat;
+        }
+
+        &:hover,&:focus,&:active{
+           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+           background: $color-1;
+        }
+    }
+}
+
+@media (max-width:991px){
+    .slick-arrow{
+
+        &.slick-prev,&.slick-next{
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            height: 50px;
+            width: 50px;
+            top: 40%;
+        }
+        &.slick-next{
+            right: 20px;
+        }
+
+        &.slick-prev{
+            left: 20px;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .title{
+        font-size: $title-font-size-sm;
     }
 }

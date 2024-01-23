@@ -1,76 +1,18 @@
+
+@import "../../styles/global/theme-variables";
 .new-arrival{
-    .new-arrival-card{
-        width: 702px;
-        height: 290px;
-        display: flex;
-        border-radius: 40px;
-        align-items: center;
-        gap: 40px;
-        background-color: #EDF2FF;
-        position: relative;
-        transition: all 200ms ease-in-out;
-        cursor: pointer;
+   .inner-wrap{
+        padding: 45px 0 65px;
 
-        .img-wrapper{
-            height: 340px;
-            width: 300px;
-            border-radius: 32px;
-            overflow: hidden;
-            flex-shrink: 0;
-            position: absolute;
-            transform: rotate(-3deg);
-            position: absolute;
-            transition: all 150ms ease-in;
-            img{
-                height: 100%;
-                width: 100%;
+        .new-arrival-slider{
+            .slick-slide{
+                // margin-left: 15px;
+                // margin-right: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
+
+            
         }
-
-        .text-wrapper{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            position: absolute;
-            left: 360px;
-            right: 47px;
-            transition: all 150ms ease-in-out;
-            top: 48px;
-
-
-            .badge-wrapper{
-                display: flex;
-                gap: 8px;
-            }
-        }
-
-        button{
-            opacity: 0;
-        }
-
-        &:hover{
-            height: 356px;
-            width: 702px;
-            transition: all 200ms ease-in-out;
-            padding-left: 10px;
-
-
-            .img-wrapper{
-                transform: rotate(0deg);
-                transition: all 150ms ease-in;
-            }
-
-            .text-wrapper{
-                gap: 14px;
-                right: 57px;
-                left: 350px;
-                transition: all 150ms ease;
-            }
-
-            button{
-                opacity: 1;
-                transition: all 0.5s ease-in-out;
-            }
-        }
-    }
+   }
 }
