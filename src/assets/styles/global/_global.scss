@@ -116,12 +116,34 @@ a {
 }
 
 .bg-dark {
-    background-color: rgba(23, 41, 87, 0.50) !important;
+    background: #0B1B45;
+    // background-color: rgba(23, 41, 87, 0.50) !important;
     .title,
     .description,
-    .heading {
+    .heading,p {
         color: $color-1;
     }
+
+    .btn-primary{
+        border-color: $color-1;
+        color: $color-1;
+        svg {
+
+
+            path {
+                stroke: white;
+            }
+        }
+    }
+
+    .books-card{
+        &:hover{
+            .books-card-wrapper{
+                background: #13345F;
+            }
+        }
+    }
+    
 }
 
 

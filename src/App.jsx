@@ -5,6 +5,7 @@ import NewArrival from "./components/new arrival/NewArrival";
 import AgeGroup from "@components/age group/AgeGroup";
 import TopBooks from "@components/top books/TopBooks";
 import PopularSeries from "@components/popular series/PopularSeries";
+import Books from "@components/books/Books";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <AgeGroup/>
         <TopBooks/>
         <PopularSeries/>
+        <Books/>
       </div>
     </div>
   );

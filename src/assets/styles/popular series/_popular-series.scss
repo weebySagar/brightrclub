@@ -1,0 +1,99 @@
+.popular-series {
+    position: relative;
+
+    .inner-wrapper {
+        padding: 75px 0 55px;
+    }
+
+    .overlay {
+        position: absolute;
+        background-image: url('/src/assets/images/bg.png');
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    hr{
+        border-top: 1px solid rgba(255, 255, 255, 0.20);        margin: 0;
+    }
+
+    .selected-book{
+        padding-top: 32px;
+        .title-wrap{
+            h1{
+                font-size: 20px;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 400;
+                margin-left: 20px;
+                color: rgba(255, 255, 255, 0.50);   
+            }
+        }
+
+        .close-btn{
+            cursor: pointer;
+        }
+    }
+
+    .popular-slider{
+    .books-card {
+        opacity: 0.4;
+        justify-content: center !important;
+        width: 100%;
+        height: 351px;
+
+        button {
+            display: none;
+        }
+
+        .img-wrapper {
+            transition: all 150ms ease-in-out;
+        }
+
+        &:hover {
+            opacity: 1;
+
+            // transform: scale(1.3);
+            transition: all 150ms ease-in-out;
+
+            .img-wrapper {
+                width: 248px;
+                height: 283px;
+                transition: all 150ms ease-in-out;
+                padding: 4px;
+                border: 2px solid white;
+                border-radius: 27px;
+            }
+
+            .books-card-wrapper {
+                background-color: transparent;
+                width: 100%;
+            }
+        }
+    }
+}
+}
+
+@media (max-width:991px) {
+    .popular-series {
+        .books-card {
+            opacity: 1;
+
+            &:hover {
+                .img-wrapper {
+                    height: 194px;
+                    width: 170px;
+                }
+
+                .books-card-wrapper {
+                    width:auto;
+                }
+            }
+        }
+    }
+}
