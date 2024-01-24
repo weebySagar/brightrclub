@@ -18,7 +18,7 @@ const NewArrivalCard = ({img,title,description,badge,ratings,reviews}) => {
             <Badge variant='secondary' text={badge[1]}/>
         </div>
         <div className="title-wrapper">
-            <h1 className='title'>{title}</h1>
+            <h1 className='heading'>{title}</h1>
         </div>
         <div className="rating-wrapper">
             <Rating rating={ratings} reviews={reviews}/>
