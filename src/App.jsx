@@ -3,6 +3,8 @@ import HeartImg from "./assets/images/heart-outline.svg";
 import Navbar from "./components/navbar/Navbar";
 import NewArrival from "./components/new arrival/NewArrival";
 import AgeGroup from "@components/age group/AgeGroup";
+import TopBooks from "@components/top books/TopBooks";
+import PopularSeries from "@components/popular series/PopularSeries";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <div className="content">
         <NewArrival />
         <AgeGroup/>
+        <TopBooks/>
+        <PopularSeries/>
       </div>
     </div>
   );

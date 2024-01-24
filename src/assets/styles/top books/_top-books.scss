@@ -1,0 +1,18 @@
+.top-books{
+    // padding: 38px 0px 8px 70px;
+
+    .inner-wrapper{
+        padding: 38px 0 8px;
+    }
+
+    .slick-slide{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:991px){
+    .top-books{
+        padding-left: 0px;
+    }
+}

@@ -48,6 +48,7 @@ a {
     font-weight: $btn-primary-font-weight;
     margin-top: 10px;
     cursor: pointer;
+    width: 100%;
 }
 
 .btn-secondary {
@@ -115,7 +116,7 @@ a {
 }
 
 .bg-dark {
-
+    background-color: rgba(23, 41, 87, 0.50) !important;
     .title,
     .description,
     .heading {

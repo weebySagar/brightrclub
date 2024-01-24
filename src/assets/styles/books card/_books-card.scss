@@ -1,0 +1,97 @@
+@import "../global/theme-variables";
+
+
+.books-card {
+    padding: 32px 0 28px;
+    width: 283px;
+    
+    .number-wrapper {
+        position: relative;
+        left: 25px;
+        span {
+            color: $color-2;
+            font-family: 'Jua', sans-serif;
+            font-size: 135px;
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: #FFF;
+            stroke-width: 5px;
+            stroke: #FFF;
+            paint-order: stroke fill;
+            // stroke-
+            transition: all 150ms ease-in-out;
+
+        }
+    }
+
+    .books-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        // padding: 9px 10px 17px;
+        gap: 10px;
+        width: 170px;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+
+
+        .img-wrapper {
+            height: 194px;
+            width: 170px;
+        }
+
+        img {
+            border-radius: 24px;
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+
+        button {
+            opacity: 0;
+            transition: all 200ms ease-in-out;
+
+        }
+
+       
+    }
+
+    &:hover {
+        // justify-content: flex-end !important;
+
+        .books-card-wrapper{
+            border-radius: 34px;
+            background: #EDF2FF;
+            transition: all 150ms ease-in-out;
+            padding: 10px 10px 16px 10px;
+            width: 200px;
+        }
+
+        button {
+            opacity: 1;
+            transition: all 200ms ease-in-out;
+        }
+
+        .number-wrapper{
+            transform: translateX(100%);
+            z-index: -1;
+            transition: all 150ms ease-in-out;
+            opacity: 0;
+            // visibility: hidden;
+            // display: none;
+        }
+
+        .img-wrapper{
+            width: 180px;
+        }
+    }
+}
+
+@media (max-width:991px){
+    .books-card{
+        .number-wrapper{
+            left: 15px;
+            span{
+                font-size: 80px;
+            }
+        }
+    }
+}
