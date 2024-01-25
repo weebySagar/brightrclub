@@ -8,7 +8,7 @@ const SocialLinks = ({title}) => {
         <p className="title">{title}</p>
         <div className="social-icons">
             {
-                socialLinks.map(link=><a href={link.link} target='blank'><img src={link.icon} alt={link.name} /></a>)
+                socialLinks.map(link=><a href={link.link} target='blank' key={link.link}><img src={link.icon} alt={link.name} /></a>)
             }
         </div>
     </div>

@@ -5,7 +5,7 @@ const FooterLinks = ({title,footerlinks}) => {
     <div className='footer-links'>
         <p className="title">{title}</p>
         {
-            footerlinks.map(link=><a className='link' href='/'>{link}</a>)
+            footerlinks.map((link)=><a className='link' href='/' key={link}>{link}</a>)
         }
     </div>
   )

@@ -1,10 +1,10 @@
-import Img1 from '@images/img15.jfif'
+// import Img1 from '@images/img15.jfif'
 
 const popularSeriesData = [
     {
         id:1,
         title:'Big Bright Feelings',
-        img:Img1,
+        img:"https://s3-alpha-sig.figma.com/img/319e/fb57/be4fa79888dd4d5284e463e0f35c4957?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WCPOB7thOx0BwQ3HQM~Iup8Z5cYpdKvfktswtuSeVOCRkarw~YKGI3xCvLaUALV07m5OzytFexVz68JdBw6aRR4yWdDIiwR8u~g031GEs-mV-JZ4WglKTBjsckBSYur5d~kOUg1NGroZGAGw6H2CS45bkP3eUh6eOAdpDU84VpqkhATCYLpKDwO2FwechuwI4NbGu4ZYvoS8KC9MC4Oj3assBdHkgeUIzuamYaXVFDrzJBb4~VqCog5Pv1g23tiiK0vpHl1CCA2Qf-aRv69sLaG1QXf4-yT8e4kW~g8TS8OvmKN3xGnzMSMZ6~PxBSI-xvXSyhDJvZtBg2W-rCScTg__",
         quantity:'24 books'
     },
     {
@@ -37,7 +37,7 @@ const popularSeriesData = [
     {
         id:7,
         title:'Big Bright Feelings',
-        img:Img1,
+        img:"https://s3-alpha-sig.figma.com/img/319e/fb57/be4fa79888dd4d5284e463e0f35c4957?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WCPOB7thOx0BwQ3HQM~Iup8Z5cYpdKvfktswtuSeVOCRkarw~YKGI3xCvLaUALV07m5OzytFexVz68JdBw6aRR4yWdDIiwR8u~g031GEs-mV-JZ4WglKTBjsckBSYur5d~kOUg1NGroZGAGw6H2CS45bkP3eUh6eOAdpDU84VpqkhATCYLpKDwO2FwechuwI4NbGu4ZYvoS8KC9MC4Oj3assBdHkgeUIzuamYaXVFDrzJBb4~VqCog5Pv1g23tiiK0vpHl1CCA2Qf-aRv69sLaG1QXf4-yT8e4kW~g8TS8OvmKN3xGnzMSMZ6~PxBSI-xvXSyhDJvZtBg2W-rCScTg__",
         quantity:'24 books'
     },
     {

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import Logo from "../../assets/images/BrightR.Club.svg";
-import SearchIcon from "../../assets/images/search.svg";
-import ArrowDown from "../../assets/images/caret-down.svg";
-import AccountImg from "../../assets/images/account.png";
-import "../../assets/styles/navbar/_navbar.scss";
+import Logo from "@images/BrightR.Club.svg";
+import SearchIcon from "@images/search.svg";
+import ArrowDown from "@images/caret-down.svg";
+import AccountImg from "@images/account.png";
+import "@styles/navbar/_navbar.scss";
 
 const Navbar = () => {
   const navLinks = ["home", "browse library", "blog", "", "my books"];
@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="navbar-wrapper links">
         <div className={`nav-links d-none d-xl-flex align-items-center`}>
           {navLinks.map((links) => (
-            <a href="#" className="links">
+            <a href="/" className="links" key={links}>
               {links}
             </a>
           ))}
@@ -53,7 +53,7 @@ const Navbar = () => {
           } d-flex d-xl-none flex-column`}
         >
           {mobileNavLinks.map((links) => (
-            <a href="#" className="links">
+            <a href="#" className="links" key={links}>
               {links}
             </a>
           ))}

@@ -3,7 +3,6 @@ import React from "react";
 import "@styles/age group/_age-group-card.scss";
 
 const AgeGroupCard = ({ img, year }) => {
-  console.log(year[0]);
   return (
     <div className="age-group-card">
       <div className="img-wrapper">
@@ -13,8 +12,8 @@ const AgeGroupCard = ({ img, year }) => {
       {
         year &&
         <div className="year-wrapper">
-        {year.map((y) => (
-          <div className="year">
+        {year.map((y,index) => (
+          <div className="year" key={index}>
             <h1 className="heading">{y}</h1>
             <p className="title">years</p>
           </div>
