@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Logo from "@images/BrightR.Club.svg";
 import SearchIcon from "@images/search.svg";
@@ -11,9 +11,19 @@ const Navbar = () => {
   const mobileNavLinks = ["home", "browse library", "blog", "my books"];
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
 
+  useEffect(()=>{
+    const scrollHandler =()=>{
+      window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false)
+    }
+    window.addEventListener('scroll',scrollHandler);
+    return ()=>window.removeEventListener('scroll',scrollHandler);
+  },[])
+
+  
   return (
-    <nav>
+    <nav className={isScrolled ? "shadow" : ""}>
       <div className="navbar-wrapper search">
         <div className="nav-logo">
           <img src={Logo} alt="" />

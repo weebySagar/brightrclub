@@ -5,6 +5,8 @@
     margin: 32px 0 28px;
     // width: 283px;
     height: 358px;
+    transition: all 150ms ease-in-out;
+
     
     .number-wrapper {
         position: relative;
@@ -57,6 +59,8 @@
 
     &:hover {
         // justify-content: flex-end !important;
+        transition: all 150ms ease-in-out;
+
 
         .books-card-wrapper{
             border-radius: 34px;

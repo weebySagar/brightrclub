@@ -46,6 +46,8 @@
         justify-content: center !important;
         width: 100%;
         height: 351px;
+        transition: all 150ms ease-in-out;
+
 
         button {
             display: none;
@@ -80,7 +82,7 @@
 }
 
 @media (max-width:991px) {
-    .popular-series {
+    .popular-slider {
         .books-card {
             opacity: 1;
 
@@ -91,7 +93,7 @@
                 }
 
                 .books-card-wrapper {
-                    width:auto;
+                    width:auto !important;
                 }
             }
         }
