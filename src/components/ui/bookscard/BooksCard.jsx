@@ -3,11 +3,10 @@ import React from "react";
 import "@styles/books card/_books-card.scss";
 import Rating from "../rating/Rating";
 import Button from "../button/Button";
-import Img1 from "@images/img1.jfif";
 
 const BooksCard = ({showNumber = false,id, img, title, rating, reviews,quantity }) => {
   return (
-    <div className="books-card d-flex align-items-center justify-content-md-start justify-content-center">
+    <div className="books-card d-flex align-items-center  justify-content-center">
         {showNumber &&
             <div className="number-wrapper">
             <span>{id}</span>
