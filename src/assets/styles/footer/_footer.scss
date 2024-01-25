@@ -1,0 +1,56 @@
+@import "../global/theme-variables";
+
+
+footer{
+    background-color: $color-2;
+    color : $color-1;
+
+    .link{
+        color: rgba(255, 255, 255, 0.70);
+        font-weight: 400;
+    }
+    .footer-wrapper{
+        padding: 35px 0 40px;
+    
+        a{
+            display: block;
+            line-height: 37px;
+        }
+    
+        
+    
+        .footer-links-wrapper{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    
+        .social-links{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+    
+            .social-icons{
+                display: flex;
+                gap: 8px;
+            }
+        }
+    
+       
+    }
+
+    .copyright{
+        padding: 13px 0;
+        position: relative;
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.06);
+        }
+    }
+}

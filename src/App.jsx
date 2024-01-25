@@ -10,6 +10,7 @@ import bestSellers from "./data/bestSellers";
 import newArrivalData from "./data/newArrivalData";
 import peppaPigData from "./data/peppaPigData";
 import BooksWrapper from "@components/books wrapper/BooksWrapper";
+import Footer from "@components/footer/Footer";
 
 function App() {
   return (
@@ -21,9 +22,8 @@ function App() {
         <TopBooks/>
         <PopularSeries/>
         <BooksWrapper/>
-       
-
       </div>
+      <Footer/>
     </div>
   );
 }
